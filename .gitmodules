@@ -1,0 +1,9 @@
+[submodule "testing"]
+	path = testing
+	url = https://github.com/DanielE330/test-online
+[submodule "dgtu-hack-spring-2025"]
+	path = dgtu-hack-spring-2025
+	url = https://github.com/DanielE330/spring-hack-2026
+[submodule "HangmanGame"]
+	path = HangmanGame
+	url = https://github.com/DanielE330/HangmanGame
