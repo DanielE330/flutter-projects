@@ -7,3 +7,6 @@
 [submodule "HangmanGame"]
 	path = HangmanGame
 	url = https://github.com/DanielE330/HangmanGame
+[submodule "MMM"]
+	path = MMM
+	url = https://github.com/DanielE330/MMM
