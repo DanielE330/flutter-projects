@@ -4,31 +4,79 @@
 
 ---
 
+## 📑 Оглавление проектов
+
+| Проект | Описание | Папка | Flutter-приложение |
+| --- | --- | --- | --- |
+| [Spring Hack 2026](#spring-hack-2026) | Приложение для весеннего хакатона | [dgtu-hack-spring-2025](./dgtu-hack-spring-2025) | `dgtu-hack-spring-2025/entry_point` |
+| [HangmanGame — Виселица](#hangmangame) | Игра на угадывание слов | [HangmanGame](./HangmanGame) | `HangmanGame` |
+| [CyberTest](#cybertest) | Приложение для тестирования студентов | [testing](./testing) | `testing/cybertest` |
+| [MMM — Monthly Money Metrics](#mmm) | Учёт личных финансов | [MMM](./MMM) | `MMM` |
+| [SkyTime — мониторинг растительности](#skytime) | Анализ спутниковых временных рядов NDVI | [kosmohack-2026](./kosmohack-2026) | `kosmohack-2026/frontend` |
+| [BugHunt — тренажёр поиска багов](#bughunt) | Практика поиска дефектов для QA | [bughunt](./bughunt) | `bughunt/frontend` |
+
 ## 📂 Что тут внутри
 
-### 1. **`dgtu-hack-spring-2025/`** — Main Event  
-Полнофункциональное приложение с full-stack подходом:
-- **`backend/`** — Django REST API с auth, логикой и всеми красивостями
-- **`entry_point/`** — Flutter фронтенд (iOS, Android, Web, десктоп)
-- **`docs/`** — полная документация (архитектура, деплой, API)
+### Spring Hack 2026
 
-### 2. **`HangmanGame/`** — Классическая Виселица  
-Простой, но полнофункциональный Flutter проект. Идеален для:
-- Быстрого запуска ("ты сможешь, даже если Flutter в первый раз")
-- Тестирования на разных платформах
-- Примера структуры Flutter app
+[Репозиторий](https://github.com/DanielE330/spring-hack-2026) · Папка: `dgtu-hack-spring-2025/`.
 
-### 3. **`testing/`** — Приложение для тестирование студентов 
-Экспериментальные проекты:
-- **`backend/`** — вспомогательный сервер для интеграционных тестов
-- **`cybertest/`** — Flutter app для каких-то специальных тестов/обучения
+Приложение для весеннего хакатона: Django REST API в `backend/`, Flutter-фронтенд в `entry_point/` и документация в `docs/`.
+Существующее имя папки сохранено.
 
-### 4. **`MMM/`** — Monthly Money Metrics 💰
-Учебное приложение для отслеживания личных доходов/расходов и планирования бюджета.
+### HangmanGame
+
+[Репозиторий](https://github.com/DanielE330/HangmanGame) · Папка: `HangmanGame/`.
+
+Классическая «Виселица» — игра на угадывание слов на Flutter. Приложение находится в корне проекта.
+
+### CyberTest
+
+[Репозиторий](https://github.com/DanielE330/cybertest) · Папка: `testing/`.
+
+Приложение для тестирования студентов с Flutter-клиентом в `cybertest/` и FastAPI-бэкендом в `backend/`.
+Репозиторий ранее назывался `test-online`; существующие путь `testing/` и URL submodule сохранены.
+
+### MMM
+
+[Репозиторий](https://github.com/DanielE330/MMM) · Папка: `MMM/`.
+
+Monthly Money Metrics — учебное приложение для отслеживания личных доходов, расходов и планирования бюджета. Flutter-приложение находится в корне проекта.
+
+### SkyTime
+
+[Репозиторий](https://github.com/DanielE330/kosmohack-2026) · Папка: `kosmohack-2026/`.
+
+Проект «КОСМОХАКАТОНА» 2026 для мониторинга растительности сельскохозяйственных полигонов по спутниковым временным рядам NDVI: восстановление пропусков и обнаружение аномалий.
+Flutter-клиент находится в `frontend/`, FastAPI-бэкенд с PostgreSQL — в `backend/`, модели обработки данных — в `ml/`.
+
+### BugHunt
+
+[Репозиторий](https://github.com/DanielE330/bughunt) · Папка: `bughunt/`.
+
+Тренажёр для практики поиска багов: сценарии с наблюдениями, десять уровней трёх сложностей, очки и таблица лидеров.
+Flutter Web-клиент находится в `frontend/`, FastAPI-бэкенд с SQLite — в `backend/`. Для запуска полного стека предусмотрен Docker Compose.
 
 ---
 
 ## 🏃 Быстрый старт
+
+### Получить проекты
+
+При первом клонировании загрузите submodule вместе с коллекцией:
+
+```bash
+git clone --recurse-submodules https://github.com/DanielE330/flutter-projects.git
+cd flutter-projects
+```
+
+Если коллекция уже клонирована, выполните из её корня:
+
+```bash
+git submodule update --init --recursive
+```
+
+Пути к Flutter-приложениям всех шести проектов указаны в оглавлении. Настройки бэкенда и переменных окружения смотрите в README соответствующего проекта.
 
 ### Для Flutter проекта (например, HangmanGame или MMM)
 ```bash
