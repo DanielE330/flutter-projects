@@ -10,3 +10,9 @@
 [submodule "MMM"]
 	path = MMM
 	url = https://github.com/DanielE330/MMM
+[submodule "kosmohack-2026"]
+	path = kosmohack-2026
+	url = https://github.com/DanielE330/kosmohack-2026
+[submodule "bughunt"]
+	path = bughunt
+	url = https://github.com/DanielE330/bughunt.git
